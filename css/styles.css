@@ -1,6 +1,9 @@
 /* font-family: 'Open Sans', sans-serif;
 font-family: 'Raleway', sans-serif; */
 
+:root {
+  --main-color: #555555;
+}
 /* open-sans-regular - latin_cyrillic */
 @font-face {
   font-family: "Open Sans";
@@ -28,4 +31,11 @@ font-family: 'Raleway', sans-serif; */
   src: local(""),
     url("../fonts/raleway-v17-latin_cyrillic-700.woff2") format("woff2"),
     url("../fonts/raleway-v17-latin_cyrillic-700.woff") format("woff");
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  line-height: 1.625;
+  letter-spacing: 0.02em;
+  color: var(--main-color);
 }
